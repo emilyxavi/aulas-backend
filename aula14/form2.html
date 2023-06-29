@@ -1,0 +1,31 @@
+ <?php
+    if(isset($_POST['cor'])){
+     $cor = $_POST['cor'];
+    }else{
+      $cor = 'white';
+    }
+ ?>
+ <doctype html>
+    <html lang=""en>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, init"
+            <title> Document</title>
+
+ <style>
+     body{
+        background-color: $cor;<? echo $cor ?>;
+     }
+
+ </style>
+ <form method="post" action="atividade2.php">
+
+    <label for="cor">Selecione uma cor</label>
+    <input type="color" name="cor" id="cor">
+        <button type="Submit"> OK</button>
+    
+</form>
+</head>
+</html>
+</doctype>

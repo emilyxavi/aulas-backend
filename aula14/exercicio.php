@@ -1,7 +1,7 @@
 <?php
 
-if(isset($_GET['numero']) && isset($_GET['n2'])){
-    $r = $_GET['numero'] + $_GET['n2'];
+if(isset($_POST['numero']) && isset($_POST['n2'])){
+    $r = $_POST['numero'] + $_POST['n2'];
     echo $r;
 }else{
     //echo "Você precisa informar os valores para somar";
